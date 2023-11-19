@@ -28,7 +28,7 @@ import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import gpt3 from "./gpt-3.png";
 
 export {
   logo,
@@ -58,5 +58,5 @@ export {
   tesla,
   carrent,
   jobit,
-  tripguide,
+  gpt3,
 };

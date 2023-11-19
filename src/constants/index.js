@@ -19,7 +19,7 @@ import {
     shopify,
     carrent,
     jobit,
-    tripguide,
+    gpt3,
     threejs,
   } from "../assets";
   
@@ -133,12 +133,12 @@ import {
     },
     {
       title: "Web Developer",
-      company_name: "Learning",
+      company_name: "FreeLancher",
       icon: meta,
       iconBg: "#E6DEDD",
       date: "Jan 2023 - Present",
       points: [
-        "Self-Study: I started my learning journey by exploring various online resources and tutorials on web development. I took advantage of platforms like youtube, Coursera, and freeCodeCamp to learn HTML, CSS, JavaScript, and other essential web development technologies",
+        "Self-Study: I started my learning journey by exploring various online resources and tutorials on web development. I took advantage of platforms like youtube, Coursera, and freeCodeCamp to learn HTML, CSS, JavaScript,react.js,redux and other essential web development technologies",
         "Building Personal Projects: I actively engaged in building personal projects to apply the concepts I learned. Creating portfolio websites,  and web applications helped me solidify my understanding of web development concepts and allowed me to showcase my work to potential employers"
       ],
     },
@@ -190,24 +190,24 @@ import {
       source_code_link: "https://github.com/thiru49/Portfolio",
     },
     {
-      name: "Trip Guide",
+      name: "GPT-3",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "We are building safe and beneficial AGI, but will also consider our mission fulfilled if our work aids others to achieve this outcome..",
       tags: [
         {
-          name: "nextjs",
+          name: "React",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "UI/UX",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "TailWindCss",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      image: gpt3,
       source_code_link: "https://github.com/",
     },
   ];
