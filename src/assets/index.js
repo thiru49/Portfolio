@@ -27,7 +27,7 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
-import jobit from "./jobit.png";
+import jobit from "./AI_Prompt.png";
 import gpt3 from "./gpt-3.png";
 
 export {

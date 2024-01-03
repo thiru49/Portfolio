@@ -169,16 +169,16 @@ import {
       source_code_link: "https://github.com/thiru49/Gerchit",
     },
     {
-      name: "Portfolio",
+      name: "PROMPTOPIA",
       description:
-        "Web application that enables user to showcase their projects and personal Experience",
+        "Promptopia is an open-source AI prompting tool for modern world to discover, create and share creative prompts",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "three.js",
+          name: "Next.js",
           color: "green-text-gradient",
         },
         {
@@ -208,7 +208,7 @@ import {
         },
       ],
       image: gpt3,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/thiru49/Responsive_UI",
     },
   ];
   
