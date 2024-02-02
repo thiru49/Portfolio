@@ -1,35 +1,51 @@
-import {BrowserRouter} from 'react-router-dom';
-
-import {About,Contact,Experience,
-Hero,Navbar,Tech,Works,StarsCanvas} from './components/index';
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {
+  About,
+  Contact,
+  Experience,
+  Hero,
+  Navbar,
+  Tech,
+  Works,
+  StarsCanvas,
+} from "./components/index";
 
 function App() {
-  
-
   return (
     <>
-     <BrowserRouter>
-      <div className='relative z-0 bg-primary'>
-          <div className='bg-hero-pattern bg-cover
-          bg-no-repeat bg-center'>
-          <Navbar/>
-          <Hero/>
-          </div>
-          <About/>
-          <Experience/>
-          <Tech/>
-          <Works/>
-          
-          <div className='relative z-0'>
-          <Contact/>
-          <StarsCanvas/>
-          </div>
-          
+      <div className="relative z-0 bg-primary">
+        <BrowserRouter>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <div
+                  className="bg-hero-pattern bg-cover
+          bg-no-repeat bg-center"
+                >
+                  <Hero />
+                </div>
+              }
+            />
+            <Route path="about" element={<About />} />
+            <Route path="experience" element={<Experience />} />
+            <Route path="tech" element={<Tech />} />
+            <Route path="projects" element={<Works />} />
+            <Route
+              path="contact"
+              element={
+                <div className="relative z-0">
+                  <Navbar />
+                  <Contact />
+                  <StarsCanvas />
+                </div>
+              }
+            />
+          </Routes>
+        </BrowserRouter>
       </div>
-     </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

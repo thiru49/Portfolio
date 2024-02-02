@@ -1,17 +1,17 @@
-import React from 'react';
-import { Tilt } from 'react-tilt';
-import { motion } from 'framer-motion';
+import React from "react";
+import { Tilt } from "react-tilt";
+import { motion } from "framer-motion";
 
-import { styles } from '../styles';
-import { services } from '../constants';
-import { fadeIn, textVariant } from '../utils/motion';
-import { SectionWrapper } from '../hoc';
+import { styles } from "../styles";
+import { services } from "../constants";
+import { fadeIn, textVariant } from "../utils/motion";
+import { SectionWrapper } from "../hoc";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
       <motion.div
-        variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
+        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
         <div
@@ -23,7 +23,9 @@ const ServiceCard = ({ index, title, icon }) => {
           className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
         >
           <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-          <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
+          <h3 className="text-white text-[20px] font-bold text-center">
+            {title}
+          </h3>
         </div>
       </motion.div>
     </Tilt>
@@ -38,12 +40,14 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
       <motion.p
-        variants={fadeIn('', '', 0.1, 1)}
+        variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3x1 leading-[30px]"
       >
-        I'm a skilled in Javascript and Knowledge in frameworks like React, node.js, TailwindCss. I'm a quick learner
-        and collaborate closely with clients or Team to create efficient, scalable, and user-friendly solutions that
-        solve real-world problems. Let's work together to bring your idea to life!
+        I'm a skilled in Javascript and Knowledge in frameworks like React,
+        node.js, TailwindCss. I'm a quick learner and collaborate closely with
+        clients or Team to create efficient, scalable, and user-friendly
+        solutions that solve real-world problems. Let's work together to bring
+        your idea to life!
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
@@ -54,6 +58,4 @@ const About = () => {
   );
 };
 
-
-
-export default SectionWrapper(About, 'about');
+export default SectionWrapper(About, "about");
