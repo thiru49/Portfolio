@@ -9,7 +9,8 @@ const BottomNav = ({ link, title }) => {
       className="absolute xs:bottom-10
  bottom-32 left-[50%]"
     >
-      <Link to={link} onClick={() => setActive(title)}>
+      <Link to={link} onClick={() => {setActive(title);window.scrollTo(0, 0);
+      }}>
         <div
           className="w-[35px] h-[64px] rounded-3xl
      border-4 border-secondary
