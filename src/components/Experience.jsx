@@ -9,7 +9,7 @@ import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
-import Navbar from "./Navbar";
+import BottomNav from "./BottomNav";
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -70,6 +70,7 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
+      <BottomNav link="/tech" title="Tech" />
     </>
   );
 };

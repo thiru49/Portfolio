@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
+import BottomNav from "./BottomNav";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -54,6 +55,7 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
+      <BottomNav link="/projects" title="Projects" />
     </>
   );
 };

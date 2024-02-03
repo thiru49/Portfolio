@@ -3,6 +3,7 @@ import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 
 import { Suspense } from "react";
+import BottomNav from "./BottomNav";
 
 const Tech = () => {
   return (
@@ -22,6 +23,7 @@ const Tech = () => {
           </Suspense>
         ))}
       </div>
+      <BottomNav link="/contact" title="Contact" />
     </>
   );
 };

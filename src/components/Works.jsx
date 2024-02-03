@@ -8,6 +8,7 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import Navbar from "./Navbar";
+import BottomNav from "./BottomNav";
 
 const ProjectCard = ({
   index,
@@ -94,6 +95,7 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
+      <BottomNav link="/experience" title="Experience" />
     </>
   );
 };
