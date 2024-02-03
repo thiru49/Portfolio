@@ -9,10 +9,21 @@ import {
   Works,
   StarsCanvas,
 } from "./components/index";
+import { createContext, useState } from "react";
 
+export const RouteContext = createContext();
+export const RouteProvider = ({ children }) => {
+  const [active, setActive] = useState("");
+  const [toggle, setToggle] = useState(false);
+  return (
+    <RouteContext.Provider value={{ active, setActive, toggle, setToggle }}>
+      {children}
+    </RouteContext.Provider>
+  );
+};
 function App() {
   return (
-    <>
+    <RouteProvider>
       <div className="relative z-0 bg-primary">
         <BrowserRouter>
           <Routes>
@@ -44,7 +55,7 @@ function App() {
           </Routes>
         </BrowserRouter>
       </div>
-    </>
+    </RouteProvider>
   );
 }
 
